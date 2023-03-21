@@ -4,5 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import ch.zhaw.freelancer4u.model.Freelancer;
 
 public interface FreelancerRepository extends
-        MongoRepository<Freelancer, String> {
+                MongoRepository<Freelancer, String> {
+        Freelancer findFirstByEmail(String email);
 }
