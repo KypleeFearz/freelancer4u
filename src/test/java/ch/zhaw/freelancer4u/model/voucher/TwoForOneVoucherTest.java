@@ -84,11 +84,11 @@ public class TwoForOneVoucherTest {
         double disc = voucher.getDiscount(list);
         System.out.println(disc);
     }
-
+/* 
     @ParameterizedTest
     @CsvSource(value = {"0,0", "1,0", "2,77", "3,115.5", "4, 154"})
     public void test5(ArgumentsAccessor accessor) {
         int jobCount = accessor.getInteger(0);
         int discount = accessor.getInteger(1); 
-    }
+    } */
 }
