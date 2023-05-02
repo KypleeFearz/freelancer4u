@@ -9,10 +9,10 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Getter
 @Setter
+@RequiredArgsConstructor
+@NoArgsConstructor
 @Document("job")
 public class Job {
     @Id
@@ -20,9 +20,9 @@ public class Job {
     @NonNull
     private String description;
     @NonNull
-    private String earnings;
-    @NonNull
     private JobType jobType;
+    @NonNull
+    private Double earnings;
     private JobState jobState = JobState.NEW;
     private String freelancerId;
 }

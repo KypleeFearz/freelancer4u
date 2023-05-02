@@ -27,7 +27,7 @@ public class TwoForOneVoucher implements Voucher{
             if (count > 1) {
                 for (Job jo: products) {
                     if (jo.getJobType() == jobType) {
-                        sum+= Double.parseDouble(jo.getEarnings());
+                        sum+= (jo.getEarnings());
                     }
                 }
             }

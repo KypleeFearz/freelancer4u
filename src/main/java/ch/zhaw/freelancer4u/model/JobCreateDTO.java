@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Getter
 public class JobCreateDTO {
     private String description;
-    private String earnings;
+    private Double earnings;
     private JobType jobType;
 }

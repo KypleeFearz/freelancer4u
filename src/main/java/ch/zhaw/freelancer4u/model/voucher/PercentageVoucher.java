@@ -19,7 +19,7 @@ public class PercentageVoucher implements Voucher {
 
     @Override
     public double getDiscount(List<Job> products) {
-        double sum = products.stream().mapToDouble(num -> Double.parseDouble(num.getEarnings())).sum();
+        double sum = products.stream().mapToDouble(num ->num.getEarnings()).sum();
         double disc = sum / 100 * discount;  
         return disc;
     }
