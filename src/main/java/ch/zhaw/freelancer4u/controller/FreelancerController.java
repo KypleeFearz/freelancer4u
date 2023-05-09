@@ -21,6 +21,7 @@ import org.springframework.security.oauth2.jwt.Jwt;
 import ch.zhaw.freelancer4u.model.Freelancer;
 import ch.zhaw.freelancer4u.model.FreelancerCreateDTO;
 import ch.zhaw.freelancer4u.repository.FreelancerRepository;
+import ch.zhaw.freelancer4u.service.MailValidatorService;
 
 @RestController
 @RequestMapping("/api")
@@ -28,6 +29,10 @@ public class FreelancerController {
 
     @Autowired
     FreelancerRepository freelancerRepository;
+
+    @Autowired
+ MailValidatorService mailValidatorService;
+
 
     @PostMapping("/freelancer")
     @Secured("ROLE_admin")
